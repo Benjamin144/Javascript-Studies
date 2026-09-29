@@ -2,250 +2,37 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>JavaScript Fundamentals – Part 1</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      background: linear-gradient(to top left, #28b487, #7dd56f);
+    }
+
+    h1 {
+      font-family: sans-serif;
+      font-size: 50px;
+      line-height: 1.3;
+      width: 100%;
+      padding: 30px;
+      text-align: center;
+      color: white;
+    }
+  </style>
+
 </head>
 
 <body>
-    <section>
-
-        <script type="text/javascript" src="sum.js"></script>
-
-        <h1>Javascript as a programming Language</h1>
-        <p>Welcome to this introduction to JavaScript programming. JavaScript is the third component of the so-called
-            trinity of
-            web development, alongside HTML and CSS. JavaScript actually predates CSS! The first commercial release of
-            JavaScript was in late 1995. It was originally called LiveScript, but the name changed to JavaScript after a
-            couple
-            of months.</p>
-
-        <aside>
-            <p>Contrary to what you might think, JavaScript is not related to or connected to the Java programming
-                language. It's been said that the name was an attempt to cash in on Java's success, but it still makes
-                seasoned
-                developers twitch a little bit when people get the two languages mixed up. JavaScript is an imperative
-                language,
-                so
-                it's a bit different from the declarative languages of HTML and CSS that you may be used to.</p>
-
-            <p>It's not unusual to feel overwhelmed when you start to learn JavaScript, and it does take practice to get
-                used to
-                writing JavaScript
-                code. Sometimes, it's good just to walk away from the computer for a while rather than staring at the
-                code. It's
-                easy to get into what I call the "Whirlpool of Despair", so sometimes a walkout to get a coffee or to
-                bring the
-                dog
-                out is all that's needed to reset your brain. But again - we'll say it again - don't try to remember
-                everything!
-                Just try to comprehend the principles of what the code is doing.</p>
-
-            <p>If you understand the basic reason why the code works, then syntax can be corrected later. Also, play
-                with the
-                runnable examples and see what happens,
-                because it's a great way of helping you to understand what the code does. Again, there are some
-                challenges to
-                testing what you're
-                learning. So, be curious about the code, dive in, and enjoy this introduction to JavaScript.</p>
-        </aside>
-        <hr>
-        <article>
-            <h1>Javascript as a programming langguage</h1>
-            <p>Lets you enhance your HTML with animation, interactivity, and dynamic visual effects. It can make
-                webpages more
-                useful by supplying immediate feedback. For example, a JavaScript powered shopping cart can instantly
-                display a
-                total cost with taxes and shipping the moment a user selects a product to buy. Javascript is used when
-                determining whether the credit card details you entered were valid before transferring those details
-                across the
-                net to the bank for processing, client-side validation it's called.
-
-                <p>Javascript is now the language of the web. For years, it was only run in browsers to operate on HTML.
-                    Now it also runs on servers and is powerful as many of the programming languages you will encounter
-                    in a
-                    later module.
-                    We just called JavaScript a programming language but let's pause for a second and describe what a
-                    computer
-                    program is.
-                    Well a computer program is a set of instructions given to a computer that are carried out in a
-                    designated
-                    sequence
-                    in order to carry out some task. The key words here are instructions and sequence.
-                    Once you know the steps, you're ready to write your program. In other words you'll translate your
-                    ideas into
-                    programming code.</p>
-
-                <p>Programming languages are used to create computer programs, they use code. Now code is made up of
-                    symbols and
-                    characters
-                    that are understood both by developers and the computer. A programming language allows you to meet
-                    the
-                    computer halfway
-                    when you want to do something. Now JavaScript is what's called an imperative language, now you'll
-                    cover this
-                    in a lot more detail
-                    later, but put simply JavaScript can make logical decisions. HTML and CSS are declarative
-                    programming
-                    languages
-                    that is, they're only concerned with how something is displayed. So how do we add JavaScript to a
-                    web page?
-                    Well web browsers are built to understand HTML and CSS and convert those languages into a visual
-                    display on
-                    the
-                    screen. To do this the browser uses what's called a layout or rendering engine. This is the part of
-                    the web
-                    browser that understands HTML and CSS. Now a browser also contains what's called a JavaScript
-                    interpreter.
-                    This
-                    is the part of the browser that understands JavaScript and it can execute the steps of a JavaScript
-                    program.
-                </p>
-                <hr>
-
-                <h2>How does the engine work</h2>
-
-                <p>Engines are complicated but the basics are easy
-                    <ol>
-                        <li>1) The engine (embedded if it is a browser) reads ("parses") the script.</li>
-                        <li>2) Then it converts ("compiles") the sript to the machine language.</li>
-                        <li>3) And then the machine code runs pretty fast.</li>
-                    </ol>
-
-                    <p>The engine applies optimizations at each step of the process. It even watches the compiled script
-                        as it
-                        runs, analyzes the data
-                        that runs through it, and further optimises the machine code based on that knowledge.</p>
-
-                    <p>Now, a web browser is usually expecting HTML but we must specify or tell the browser when
-                        JavaScript is
-                        included. And to do this we used the script tag. This is similar to the style tag used in CSS,
-                        also like
-                        CSS, JavaScript can be included in the head element are accessed from an external file. But
-                        JavaScript
-                        doesn't have to be confined to the head elemental though. You can insert script elements in the
-                        body
-                        area too
-                        creating islands of behavior or functionality throughout the page.</p>
-
-                    <p>>In fact, it's often recommended that you place your JavaScript as the last element inside the
-                        body
-                        of a page. Why? Well because JavaScript <em>mainly</em> operates on HTML element's as part of
-                        task.
-                        Javascript is designed to be able to travel the element family tree or <em>DOM</em> and access,
-                        modify,
-                        add, or even delete elements on that tree.</P>
-                    <p> If the JavaScript appears in the head of a page it might attempt to access elements that have
-                        not yet
-                        been interpreted by the browser. That is because they might not have been added to the
-                        <em>family tree in memory.</em>
-                        These elements need to have first been read by the browser interpreter in order for JavaScript
-                        to access
-                        them on the tree.</P>
-                    <p>So let's have a look at some JavaScript grammar, well learning a programming language is a lot
-                        like
-                        learning any new language. There are words to learn, punctuation to understand, and a new set of
-                        rules to master.
-                        Just as you need to learn the grammar of Spanish to
-                        speak Spanish you must become familiar with the grammar of JavaScript to program JavaScript.
-                        Now once you know the fundamentals of one programming language you know the fundamental's more
-                        or less of all of them.</p>
-                    <p>Now you'll cover the fundamentals of programming languages in much more detail in a later module.
-                        But now we'll take a quick look at what a minimal two line JavaScript program looks like.
-                        Now Javascript allows us to directly interact with the document object model.
-                        In our example here we access the data what's called a document object.
-                        When an HTML document is loaded into a web browser it becomes the document object model or the
-                        document
-                        object. The document object is the root node of the HTML and it's the owner of all the other
-                        nodes or elements or
-                        the parent of them. The document object provides properties and methods to access all node
-                        objects from within
-                        JavaScript.
-
-                        <hr>
-                        <h2>Example</h2>
-                        <h3>document.mydocument(document1)
-                            console.log(document1)
-                        </h3>
-
-                        <p> In our example above, we use the document object to write to the screen, twice. The first
-                            time we
-                            write some HTML formatted text to the screen just to sure you can either convert the text
-                            into and recognize
-                            the tags. Now the second time we write the sum of two numbers to the screen, JavaScript uses
-                            what's called dot
-                            notation. On the left we see a word called document, this word represents the document
-                            object both suited to
-                            the developer and to the browser. It's then followed by a dot and then another word with
-                            parentheses and some
-                            text inside the parentheses. Everything after the dot is called a function, function does
-                            something.
-
-                            <p>The name tells us what the function does, in this case it will just write something to
-                                the screen.
-                                The text inside the parenthesis is what will be evaluated and written to the screen.
-                                This illustrates Javascripts ability to work with and even create HTML events on the
-                                fly. And secondly, it can perform tasks such as mathematical
-                                operations.Now notice that this content is added dynamically. That is when the page is
-                                created there are no elements
-                                inside in the body tags it's only when the page is run in a browser does the JavaScript
-                                run</p>
-
-                        </p>The name tells us what the function does, in this case it will just write something to the
-                        screen.
-                        The text inside the parenthesis is what will be evaluated and written to the screen.
-                        This illustrates Javascripts ability to work with and even create HTML events on the fly. And
-                        secondly, it can perform tasks such as mathematical
-                        operations.Now notice that this content is added dynamically. That is when the page is created
-                        there are no elements
-                        inside in the body tags it's only when the page is run in a browser does the JavaScript run
-                    </p>
-        </article>
-
-    </section>
-    <div>
-        <h1>JavaScript naming variables</h1>
-        <ol>
-            <ul>
-                <h2>abstract</h2>
-                <h2>boolean</h2>
-                <h2>break</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-                <h2>abstract</h2>
-            </ul>
-        </ol>
-    </div>
-
+  <h1>JavaScript Fundamentals – Part 1</h1>
+  <script src="script.js"></script>
+  <! <script src="assignments.js">
+    </script>
+    !>
 </body>
 
 </html>
