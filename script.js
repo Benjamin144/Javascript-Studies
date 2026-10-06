@@ -56,9 +56,21 @@ const birthYear = 1991;
 
 const job;
 
-*/
-
 var job = `programmer`;
 job = `teacher`;
+
+*/
+
+//code to compare BMI (Body Mass Index) & also creates a boolean variable to check a higher value
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 95;
+const heightJohn = 1.96;
+const BMIMark = massMark / (heightMark * heightMark);
+const BMIJohn = massJohn / (heightJohn * heightMark);
+const markHigherBMI = (typeof heightMark > heightJohn);
+
+console.log(BMIMark, BMIJohn, markHigherBMI);
+
 
 
