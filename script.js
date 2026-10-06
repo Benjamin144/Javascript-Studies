@@ -59,7 +59,6 @@ const job;
 var job = `programmer`;
 job = `teacher`;
 
-*/
 
 //code to compare BMI (Body Mass Index) & also creates a boolean variable to check a higher value
 const massMark = 78;
@@ -70,6 +69,33 @@ const BMIMark = massMark / (heightMark * heightMark);
 const BMIJohn = massJohn / (heightJohn * heightMark);
 // const markHigherBMI = (typeof heightMark > heightJohn);
 const markHigherBMI = (BMIMark > BMIJohn);
+
+*/
+
+//String literals
+
+const firstName = 'Joseph';
+const job = 'driver'
+const birthYear = 1971;
+const year = 2026;
+
+const Joseph = "I am " + firstName + ', a ' + (year - birthYear) + ' year old' + job + '!';
+
+console.log(Joseph);
+
+const josephNew = `I'm ${firstName}, a ${year - birthYear} year old ${job} !`;
+
+console.log(josephNew)
+
+console.log(`Just a regular string...`);
+
+console.log('String with \n\
+multiple \n\
+lines');
+// Mulltiline string using template literals
+console.log(`String
+multiple
+lines`);
 
 
 
