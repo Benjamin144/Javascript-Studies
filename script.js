@@ -70,8 +70,6 @@ const BMIJohn = massJohn / (heightJohn * heightMark);
 // const markHigherBMI = (typeof heightMark > heightJohn);
 const markHigherBMI = (BMIMark > BMIJohn);
 
-*/
-
 //String literals
 
 const firstName = 'Joseph';
@@ -96,6 +94,18 @@ lines');
 console.log(`String
 multiple
 lines`);
+
+*/
+
+//Making decisions with code
+
+const age = 19;
+
+if (age >= 18) {
+    console.log('Sarah can start driving license ')
+
+}
+
 
 
 
