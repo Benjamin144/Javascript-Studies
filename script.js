@@ -103,7 +103,6 @@ if (age >= 18) {
     console.log('Sarah can start driving license ')
 }
 
-*/
 
 //IF ELSE Control Structure
 const age = 15;
@@ -116,6 +115,16 @@ if (age >= 18) {
 
 }
 
+*/
+
+const myBirthYear = 2000;
+let myCentury
+if (myBirthYear <= 1999) {
+    myCentury = 19;
+} else {
+    myCentury = 20;
+}
+console.log(myCentury);
 
 
 
