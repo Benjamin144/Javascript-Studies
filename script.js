@@ -123,7 +123,9 @@ if (myBirthYear <= 1999) {
     myCentury = 20;
 }
 console.log(myCentury);
-*/
+
+The following code was incorrect because the parentheses for the placement holder wasn't used
+
 const massMark = 78;
 const heightMark = 1.69;
 const massJohn = 92;
@@ -135,6 +137,8 @@ const markHigherBMI = heightMark > heightJohn;
 
 console.log(BMIMark, BMIJohn, markHigherBMI);
 console.log(`Mark's BMI ${BMIMark} is higher than John's ${BMIJohn}!`);
+
+*/
 
 
 
