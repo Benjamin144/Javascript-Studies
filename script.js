@@ -179,8 +179,6 @@ console.log(typeof NaN);
 
 console.log(String(23), 23);
 
-*/
-
 // type conversion
 const inputYear = '1971';
 console.log(Number(inputYear), inputYear);
@@ -206,6 +204,31 @@ console.log(typeof n);
 let o = 2 + 3 + 4 + '5'
 o = o
 console.log(o);
+
+*/
+
+// 5 falsy values: 0, '', undefined, null, NaN
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Joseph'));
+console.log(Boolean({}));//an empty object
+console.log(Boolean(''));
+
+const money = 100;
+if (money) {
+    console.log("Don't spend it all!");
+} else {
+    console.log('You should get a job!');
+}
+
+// remember falsy values will automatically be converted to a boolean
+let height = 0;
+if (height) {
+    console.log('YAY! Height is defined');
+} else {
+    console.log('Height is UNDEFINED');
+}
 
 
 
