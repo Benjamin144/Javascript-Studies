@@ -205,8 +205,6 @@ let o = 2 + 3 + 4 + '5'
 o = o
 console.log(o);
 
-*/
-
 // 5 falsy values: 0, '', undefined, null, NaN
 
 console.log(Boolean(0));
@@ -230,5 +228,16 @@ if (height) {
     console.log('Height is UNDEFINED');
 }
 
+*/
 
+//strict equality operators v loose equality operators.
+
+const age = '18'
+
+if (age === 18) console.log("You just  became an adult :D (strict)");
+
+if (age == 18) console.log("You just  became an adult :D (loose)");
+
+
+// Always try to use strict equality operators in the code to avoid potential bugs and helps with producing cleaner code
 
