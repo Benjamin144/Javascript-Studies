@@ -228,8 +228,6 @@ if (height) {
     console.log('Height is UNDEFINED');
 }
 
-*/
-
 //strict equality operators v loose equality operators.
 
 const age = '18'
@@ -240,4 +238,26 @@ if (age == 18) console.log("You just  became an adult :D (loose)");
 
 
 // Always try to use strict equality operators in the code to avoid potential bugs and helps with producing cleaner code
+
+*/
+
+const favorite = Number(prompt("What's your favorite number?"));
+console.log(favorite);
+// console.log(typeof favorite);
+
+if (favorite === 777) { //'777' == 77 -> FALSE
+    console.log('Cool! 777 is an amazing number!')
+} else if (favorite === 7) {
+    console.log('7 is also a cool number')
+} else if (favorite === 3) {
+    console.log('yep 3 this is yet another cool number..bro')
+} else if (favorite === 144) {
+    console.log('my..my..144, we really are cooking with gas!')
+}
+
+else {
+    console.log('Number is not 777 or 7 or 3 or 144, so not one of your favorite numbers')
+};
+
+if (favorite != 777) console.log('Why not 777');
 
