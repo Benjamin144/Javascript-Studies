@@ -259,8 +259,6 @@ else {
 
 if (favorite != 777) console.log('Why not 777');
 
-*/
-
 const hasDriversLicense = true // A
 const hasGoodVision = true // B
 console.log(hasDriversLicense && hasGoodVision);
@@ -276,6 +274,8 @@ if (hasDriversLicense && hasGoodVision) {
 const isTired = true; // C
 
 console.log(hasDriversLicense || hasGoodVision || isTired);
+
+*/
 
 
 
