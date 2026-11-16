@@ -239,8 +239,6 @@ if (age == 18) console.log("You just  became an adult :D (loose)");
 
 // Always try to use strict equality operators in the code to avoid potential bugs and helps with producing cleaner code
 
-*/
-
 const favorite = Number(prompt("What's your favorite number?"));
 console.log(favorite);
 // console.log(typeof favorite);
@@ -260,4 +258,28 @@ else {
 };
 
 if (favorite != 777) console.log('Why not 777');
+
+*/
+
+const hasDriversLicense = true // A
+const hasGoodVision = true // B
+console.log(hasDriversLicense && hasGoodVision);
+console.log(hasDriversLicense || hasGoodVision);
+console.log(!hasDriversLicense);
+
+if (hasDriversLicense && hasGoodVision) {
+    console.log('Sarah is able to drive!');
+} else {
+    console.log('Someone else should drive.....!');
+}
+
+const isTired = true; // C
+
+console.log(hasDriversLicense || hasGoodVision || isTired);
+
+
+
+
+
+
 
