@@ -275,7 +275,6 @@ const isTired = true; // C
 
 console.log(hasDriversLicense || hasGoodVision || isTired);
 
-*/
 const hasDriversLicense = true // A
 const hasGoodVision = true // B
 console.log(hasDriversLicense && hasGoodVision);
@@ -298,6 +297,28 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
     console.log('Someone else should drive.....!');
 }
 
+*/
+
+/* Write your code below. Good luck! 🙂 */
+
+// compete three times, The winner with the highest average score wins a trophy!
+// 1. Calculate the average score for each team, using the test data included below.
+
+const scoreDolphins
+const scoreKoalas
+
+"Dolphins win the trophy" if Dolphins win, or
+
+"Koalas win the trophy" if Koalas win, or
+
+"Both win the trophy" if their average scores are equal.
+
+// TEST DATA: Dolphins scored 96, 108, and 89. Koalas scored 88, 91, and 110.
+
+// to Calculate the avaerage I need to add all thre numbers together and divide them by three
+// Dolphins 293/3 = 97.66666666666667 is the avaerage score
+// Koalas 289/3 = 96.33333333333333 is the average score
+// Dolphins win according to raw data
 
 
 
